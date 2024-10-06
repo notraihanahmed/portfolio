@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0, viewport-fit=cover"/>
+    <meta name="author" content="Raihan Ahmed"/>
+    <meta name="theme-color" content="blueviolet"/>
+    <title>Raihan Ahmed - Portfolio</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" >
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Suranna&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="query.css" media="(min-width: 360px) and (max-width: 1279px)">
+    <script>
+        function preload() {
+            let loadingStopped = false;
+            let preloader = document.getElementById("preload");
+            setTimeout(() => {
+                if (!loadingStopped) {
+                    preloader.style.opacity = 0;
+                    setTimeout(() => { preloader.style.display = "none"; }, 500);
+                    loadingStopped = true;
+                }
+            }, 2000);
+            window.addEventListener('load', () => {
+                if (!loadingStopped) {
+                    preloader.style.opacity = 0;
+                    setTimeout(() => { preloader.style.display = "none"; }, 500);
+                    loadingStopped = true;
+                }
+            });
+        }
+        window.onload = preload;
+    </script>
+</head>
+<body onload="preload()">
+    <div id="preload">
+        <div class="loader"></div>
+        <h2>LOADING...</h2>
+    </div>
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <img src="images/logo name.png" alt="logo" title="logo" href="#home"/>
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+            <div id="scroll-tracker"></div>
+        </nav>
+        <header class="home" id="home">
+            <div class="intro">
+                <h2>Hey There! I am</h2>
+                <h1>Raihan Ahmed.</h1>
+                <p>I am Web developer and Programming language Learner.</p>
+                <p>I like to play with fundamentals and make small things which gives better UX and elegant UI.</p>
+                <p>My excitement never stops to learn new things.</p>
+                <hr>
+                <a href="#" class="resume-btn">Download Resume</a>
+            </div>
+            <div class="image">
+                <img src="images/author.png" alt="raihan ahmed - image" loading="lazy">
+                <img src="images/author-2.jpg" alt="raihan ahmed - image" loading="lazy">
+            </div>
+        </header>
+        <section class="about" id="about">
+            <div class="texts">
+                <h1>About Me</h1>
+                <h2>Raihan Ahmed</h2>
+                <p>I am a Freelance front-end Developer based in Bangladesh. I have been Experiencing in web development for 1 year To Convert Imaginations and Ideas into Websites, Blogg, E-commerce, Portfolio, Magazine etc.</p>
+                <p>I like to play with fundamentals and make small things which gives better UX and elegant UI.<br>My excitement never stops to learn new things.</p>
+                <hr>
+                <div class="contact-card">
+                    <p>Email : <a href="mailto: raihanahmed@duck.com">notraihanahmed@duck.com</a></p>
+                    <p>Birthday : 17 JULY</p>
+                    <p>From : Teknaf, Cox's Bazar</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/notraihanahmed" title="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="https://x.com/notraihanahmed" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://discord.com/invite/EBVTxsQg" title="Discord"><i class="fab fa-discord"></i></a>
+                        <a href="https://linkedin.com/in/notraihanahmed" title="Linked In"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/notraihanahmed" title="Github"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="skills">
+                <h1>Skills</h1>
+                <p>HTML - </p>
+                <div class="progress-bar">
+                    <div id="html">100%</div>
+                </div>
+                <p>CSS - </p>
+                <div class="progress-bar">
+                    <div id="css">100%</div>
+                </div>
+                <p>CSS frameworks - </p>
+                <div class="progress-bar">
+                    <div id="css-f">80%</div>
+                </div>
+                <p>JAVASCRIPT - </p>
+                <div class="progress-bar">
+                    <div id="js">45%</div>
+                </div>
+                <p>Others -</p>
+                <div class="rect"><div>SEO</div></div>
+                <div class="rect"><div>INTERNET</div></div>
+                <div class="rect"><div>PARALLAX</div></div>
+                <div class="rect"><div>UI-UX</div></div>
+                <div class="rect"><div>ACCESSIBILITY</div></div>
+                <div class="rect"><div>VISUAL-DESIGN</div></div>
+            </div>
+        </section>
+        <section class="projects" id="projects">
+            <div class="websites">
+                <div class="card">
+                    <iframe src="https://notraihanahmed.github.io/evasophie" scrolling="no" loading="lazy"></iframe>
+                    <div>
+                        <h3>Eva Sophie</h3>
+                        <p>This is a Portfolio website with a colorful theme and user interactive elements. This project is specifically designed for mobile screen.</p>
+                        <hr>
+                        <a href="https://notraihanahmed.github.io/evasophie">Visit live website ›</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <iframe src="https://notraihanahmed.github.io/blogg" scrolling="no" loading="lazy"></iframe>
+                    <div>
+                        <h3>Wellness Warrior Way</h3>
+                        <p>This is a Blog website. The theme color, pages, and buttons make this website a professional blog. The current live website is designed for mobile screens.</p>
+                        <hr>
+                        <a href="https://notraihanahmed.github.io/blogg">Visit live website ›</a>
+                    </div>
+                </div>
+            </div>
+            <div class="small-project">
+                <hr>
+                <h2>Other projects will be added soon!</h2>
+            </div>
+        </section>
+        <section class="faq" id="faq">
+            <h1>FREQUENTLY ASKED QUESTIONS</h1>
+            <div class="qa-box">
+                <div class="qa-card">
+                    <h3>Who is Raihan Ahmed?</h3>
+                    <hr>
+                    <p>Raihan Ahmed is a web developer, currently learning at Al Jameatul Ahlia Darul Ulom Hathazari in (Mishkat). His websites received a recommendation badge 2 times from Google, because of user experiences, user interface, and accessibility for all types of people.</p>
+                </div>
+                <div class="qa-card">
+                    <h3>How or Where did I learn Web development?</h3>
+                    <hr>
+                    <p>I learned most things from books and practical testing, then documentary websites, and made small fundamental projects to understand them deeply. I recommend <a href="https://mergesocity.vercel.app">mergesocity</a> as a documentary website. Also, watch videos on YouTube to make knowledge professional.</p>
+                </div>
+                <div class="qa-card">
+                    <h3>Why choose me as a developer?</h3>
+                    <hr>
+                    <p>I have been learning web development for 2 years. I have seen many designs and also designed websites. As a developer, I have learned more than others, including SEO, internet, web security, and visual thinking. People choose me for elegant UI/UX design and better accessibility for everyone.</p>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <form action="https://formspree.io/f/mdkondkv"
+  method="POST">
+                <h3>Let's get in Touch faster, MESSAGE ME</h3>
+                <div class="form-box">
+                    <textarea placeholder="Type your Message *" maxlength="99" name="massage" required></textarea>
+                    <div class="form-inputs">
+                        <input type="name" class="input" placeholder="Type your Name *" min="4" max="15" name="name" required/>
+                        <input type="text" class="input" placeholder="Type your Subject *" min="4" max="20" name="subject" required/>
+                        <input type="email" class="input" placeholder="Type your Email *" name="email" required/>
+                    </div>
+                </div>
+                <input type="submit" value="SEND" class="button">
+            </form>
+            <div class="texts">
+                <div class="logo">
+                    <img src="images/logo name.png" alt="logo" title="logo" href="#home"/>
+                </div>
+                <div class="social-icons">
+                    <a href="https://facebook.com/notraihanahmed" title="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="https://x.com/notraihanahmed" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://discord.com/invite/EBVTxsQg" title="Discord"><i class="fab fa-discord"></i></a>
+                    <a href="https://linkedin.com/in/notraihanahmed" title="Linked In"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/notraihanahmed" title="Github"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Designed & Developed by <a href="index.html">Raihan Ahmed</a> &copy; - 2024 All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+    <script>
+        let sections = document.querySelectorAll('header, section');
+        let navLinks = document.querySelectorAll('nav ul li a');
+        window.onscroll = () => {
+            sections.forEach(sec => {
+                let top = window.scrollY;
+                let offset = sec.offsetTop - 150;
+                let height = sec.offsetHeight;
+                let id = sec.getAttribute('id');
+                if (top >= offset && top < offset + height) {
+                    navLinks.forEach(links => {
+                        links.classList.remove('active');
+                        document.querySelector('nav ul li a[href*=' + id + ']').classList.add('active');
+                    });
+                }
+            });
+        };
+        function error() {
+            alert("Sorry, cannot submit. Try again later!");
+        }
+    </script>
+</body>
+</html>
