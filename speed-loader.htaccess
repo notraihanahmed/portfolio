@@ -14,35 +14,7 @@
 </IfModule>
 
 <IfModule mod_headers.c>
-  Header set Cache-Control "max-age=3600, public"
-</IfModule>
-
-<IfModule mod_headers.c>
   Header set Content-Security-Policy "default-src 'self'; script-src 'self' https://raihanahmed.vercel.app"
-</IfModule>
-
-<IfModule mod_headers.c>
-  Header set X-Frame-Options "DENY"
-</IfModule>
-
-<IfModule mod_headers.c>
-  Header set X-Content-Type-Options "nosniff"
-</IfModule>
-
-<IfModule mod_headers.c>
-  Header set Strict-Transport-Security "max-age=31536000; includeSubDomains"
-</IfModule>
-
-<IfModule mod_headers.c>
-  Header set Referrer-Policy "no-referrer"
-</IfModule>
-
-<IfModule mod_headers.c>
-  Header set Permissions-Policy "geolocation=(), microphone=(), camera=()"
-</IfModule>
-
-<IfModule mod_headers.c>
-  Header set Expect-CT "max-age=86400, enforce"
 </IfModule>
 
 <Files "cache.manifest">
