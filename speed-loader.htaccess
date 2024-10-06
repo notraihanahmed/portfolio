@@ -4,10 +4,11 @@
   
   # Remove browser bugs
   BrowserMatch ^Mozilla/4 gzip-only-text/html
-  BrowserMatch ^Mozilla/4\.0[678] no-gzip
-  BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+  BrowserMatch ^Mozilla/4\\.0[678] no-gzip
+  BrowserMatch \\bMSIE !no-gzip !gzip-only-text/html
   Header append Vary User-Agent
 </IfModule>
+
 <IfModule mod_brotli.c>
   AddOutputFilterByType BROTLI_COMPRESS text/html text/plain text/css application/javascript application/x-javascript application/json application/xml application/xml+rss
 </IfModule>
@@ -15,18 +16,35 @@
 <IfModule mod_headers.c>
   Header set Cache-Control "max-age=3600, public"
 </IfModule>
+
 <IfModule mod_headers.c>
   Header set Content-Security-Policy "default-src 'self'; script-src 'self' https://raihanahmed.vercel.app"
 </IfModule>
+
 <IfModule mod_headers.c>
   Header set X-Frame-Options "DENY"
 </IfModule>
+
 <IfModule mod_headers.c>
   Header set X-Content-Type-Options "nosniff"
 </IfModule>
+
 <IfModule mod_headers.c>
   Header set Strict-Transport-Security "max-age=31536000; includeSubDomains"
 </IfModule>
+
+<IfModule mod_headers.c>
+  Header set Referrer-Policy "no-referrer"
+</IfModule>
+
+<IfModule mod_headers.c>
+  Header set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+</IfModule>
+
+<IfModule mod_headers.c>
+  Header set Expect-CT "max-age=86400, enforce"
+</IfModule>
+
 <Files "cache.manifest">
     Header set Cache-Control "no-cache"
     Header set Content-Type "text/cache-manifest"
