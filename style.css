@@ -360,7 +360,7 @@ section:nth-child(odd) {
         -moz-column-gap: 1rem;
              column-gap: 1rem;
 }
-.about .texts h1, .about .texts h2, .about .skills h1 {
+.about .texts h2, .about .texts h3, .about .skills h2 {
     text-align: center;
     margin-bottom: .5rem;
 }
@@ -537,7 +537,7 @@ section:nth-child(odd) {
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
 }
-.faq h1 { 
+.faq h2 { 
     text-align: center;
 }
 .faq .qa-box {
