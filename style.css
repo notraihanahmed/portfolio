@@ -189,7 +189,7 @@ nav ul li a.active {
     color: var(--white);
 }
 .home, .about, .projects, .faq {
-    min-height: 100vh;
+    height: 100vh;
     max-height: 900px;
     padding: 5rem;
     -webkit-box-sizing: border-box;
