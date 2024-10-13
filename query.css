@@ -92,7 +92,6 @@
     .home, .about, .projects, .faq {
         padding: 1rem;
         min-height: 100vh;
-        max-height: 720px;
     }
     nav {
         padding: 1rem;
