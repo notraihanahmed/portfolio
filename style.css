@@ -229,7 +229,7 @@ section:nth-child(odd) {
     transition: .5s linear;
 }
 
-.image picture {
+.image picture img {
     height: 100%;
     width: 100%;
     border-radius: 5vh;
@@ -241,7 +241,7 @@ section:nth-child(odd) {
     -webkit-box-shadow: 0 0 100px var(--active);
             box-shadow: 0 0 100px var(--active);
 }
-.image picture:nth-child(2) {
+.image picture:nth-child(2) img {
     -webkit-transform: rotateY(180deg);
             transform: rotateY(180deg);
     -webkit-transform-origin: center;
