@@ -227,6 +227,8 @@ section:nth-child(odd) {
     -webkit-transition: .5s linear;
     -o-transition: .5s linear;
     transition: .5s linear;
+    webkit-perspective: 1000px;    
+           perspective: 1000px;
 }
 .image picture {
     position: absolute;
@@ -236,6 +238,8 @@ section:nth-child(odd) {
     height: 100%;
     -webkit-backface-visibility: hidden;
 	    backface-visibility: hidden;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
 }
 .image picture img {
     height: 100%;
