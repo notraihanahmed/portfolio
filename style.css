@@ -230,7 +230,7 @@ section:nth-child(odd) {
     webkit-perspective: 1000px;    
            perspective: 1000px;
 }
-.image picture {
+.image .img {
     position: absolute;
     top: 0;
     left: 0;
@@ -241,7 +241,7 @@ section:nth-child(odd) {
     -webkit-transform-style: preserve-3d;
             transform-style: preserve-3d;
 }
-.image picture img {
+.image .img img {
     height: 100%;
     width: 100%;
     border-radius: 5vh;
@@ -250,10 +250,10 @@ section:nth-child(odd) {
     -webkit-box-shadow: 0 0 100px var(--active);
             box-shadow: 0 0 100px var(--active);
 }
-.image picture:nth-child(1) img {
+.image .img:nth-child(1) img {
     z-index: 2;
 }
-.image picture:nth-child(2) img {
+.image .img:nth-child(2) img {
     -webkit-transform: rotateY(180deg);
             transform: rotateY(180deg);
     -webkit-transform-origin: center;
