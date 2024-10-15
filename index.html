@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" manifest="cache.manifest">
+<html lang="en">
 <head>
     <meta charset="UTF-8"/>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
@@ -15,6 +15,7 @@
     <title>Raihan Ahmed | Portfolio</title>
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" >
     <link rel="canonical" href="https://notraihanahmed.vercel.app" >
+    <link rel="manifest" href="/manifest.json" >
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Suranna&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Suranna&display=swap"></noscript>
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Nunito:ital@0;1&family=Suranna&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -23,7 +24,7 @@
      <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"></noscript>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="query.css" media="(min-width: 360px) and (max-width: 1279px)">
-    <script>
+    <script async>
         function preload() {
             let loadingStopped = false;
             let preloader = document.getElementById("preload");
@@ -260,7 +261,15 @@
         };
         function error() {
             alert("Sorry, cannot submit. Try again later!");
-        }
+	}
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/service-worker.js')
+    .then(function(registration) {
+      console.log('Service Worker registered with scope:', registration.scope);
+    }).catch(function(error) {
+      console.log('Service Worker registration failed:', error);
+    });
+   }
     </script>
 </body>
 </html>
