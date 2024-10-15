@@ -1,0 +1,41 @@
+{
+  "headers": [
+    {
+      "source": "/(.*)",  // Applies to all routes
+      "headers": [
+        {
+          "key": "Content-Security-Policy",
+          "value": "default-src 'self'; script-src 'self' https://example.com"
+        },
+        {
+          "key": "Strict-Transport-Security",
+          "value": "max-age=31536000; includeSubDomains"
+        },
+        {
+          "key": "X-XSS-Protection",
+          "value": "1; mode=block"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "max-age=604800, public"
+        },
+        {
+          "key": "Accept-Encoding",
+          "value": "gzip, br"
+        },
+        {
+          "key": "Vary",
+          "value": "Accept-Encoding, User-Agent"
+        },
+        {
+          "key": "Content-Encoding",
+          "value": "br"
+        }
+      ]
+    }
+  ]
+}
