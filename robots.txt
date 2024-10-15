@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 Disallow: /cgi-bin/
-Sitemap: https://raihanahmed.vercel.app/sitemap.xml
+Sitemap: https://notraihanahmed.vercel.app/sitemap.xml
