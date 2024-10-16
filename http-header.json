@@ -1,7 +1,7 @@
 {
   "headers": [
     {
-      "source": "/(.*)",  // Applies to all routes
+      "source": "/(.*)",
       "headers": [
         {
           "key": "Content-Security-Policy",
@@ -21,7 +21,7 @@
         },
         {
           "key": "Cache-Control",
-          "value": "max-age=604800, public"
+          "value": "public, max-age=0, must-revalidate"
         },
         {
           "key": "Accept-Encoding",
