@@ -21,7 +21,7 @@
         },
         {
           "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
+          "value": "public, no-cache, must-revalidate"
         },
         {
           "key": "Accept-Encoding",
