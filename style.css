@@ -576,7 +576,7 @@ section:nth-child(odd) {
     border-radius: 1rem;
 }
 .faq .qa-box .qa-card h3 {
-    color: var(--active);
+    color: var(--light);
 }
 /* Footer section style */
 .footer {
