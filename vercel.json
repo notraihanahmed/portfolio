@@ -8,8 +8,8 @@
           "value": "max-age=31536000; includeSubDomains"
         },
         {
-          "key": "X-XSS-Protection",
-          "value": "1; mode=block"
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
         },
         {
           "key": "X-Frame-Options",
@@ -18,19 +18,6 @@
         {
           "key": "Cache-Control",
           "value": "no-cache, no-store, must-revalidate"
-          
-        },
-        {
-          "key": "Accept-Encoding",
-          "value": "gzip, br"
-        },
-        {
-          "key": "Vary",
-          "value": "Accept-Encoding, User-Agent"
-        },
-        {
-          "key": "Content-Encoding",
-          "value": "br"
         }
       ]
     }
