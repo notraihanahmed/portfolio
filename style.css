@@ -660,7 +660,7 @@ section:nth-child(odd) {
             box-shadow: 0 0 5px var(--active);
     font-size: 1.1rem;
     font-weight: bold;
-    color: var(--white);
+    color: var(--black);
     -webkit-transition: .5s ease;
     -o-transition: .5s ease;
     transition: .5s ease;
