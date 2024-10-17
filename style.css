@@ -47,6 +47,10 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-transition: opacity .5s ease;
+    -o-transition: opacity .5s ease;
+    transition: opacity .5s ease;
+    opacity: 1;
 }
 #preload .loader {
     width: 120px;
@@ -187,6 +191,7 @@ nav ul li a.active {
     overflow-y: scroll;
     background: var(--black);
     color: var(--white);
+    display: none;
 }
 .home, .about, .projects, .faq {
     height: 100vh;
