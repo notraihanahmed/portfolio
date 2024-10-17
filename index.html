@@ -5,7 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <meta name="author" content="Raihan Ahmed "/>
-    <meta name="description" content="I am a Freelance front-end Developer based in Bangladesh. I have been Experiencing in web development for 1 year To Convert Imaginations and Ideas into Websites, Blogg, E-commerce, Portfolio, Magazine etc." />
+    <meta name="description" content="I am a Freelance front-end Developer based in Bangladesh with 2 year of experience in Web development. I specialize in turning imaginations and ideas into fully functional websites, blogs, e-commerce platforms, portfolios, and more." />
     <meta name="category" content="Personal/Portfolio" />
     <meta name="theme-color" content="blueviolet"/>
     <meta name=”robots” content=”index, follow” />
@@ -24,24 +24,28 @@
     <link rel="stylesheet" href="query.css" media="(min-width: 360px) and (max-width: 1279px)">
     <script async>
         function preload() {
-            let loadingStopped = false;
-            let preloader = document.getElementById("preload");
-            setTimeout(() => {
-                if (!loadingStopped) {
-                    preloader.style.opacity = 0;
-                    setTimeout(() => { preloader.style.display = "none"; }, 500);
-                    loadingStopped = true;
-                }
-            }, 2000);
-            window.addEventListener('load', () => {
-                if (!loadingStopped) {
-                    preloader.style.opacity = 0;
-                    setTimeout(() => { preloader.style.display = "none"; }, 500);
-                    loadingStopped = true;
-                }
-            });
-        }
-        window.onload = preload;
+    const preloader = document.getElementById("preload");
+    const body = document.getElementById("body");
+
+    body.style.display = "block";
+
+    setTimeout(() => {
+        preloader.style.opacity = 0;
+        setTimeout(() => {
+            preloader.style.display = "none";
+        }, 500);
+    }, 3000);
+
+    window.addEventListener('load', () => {
+        preloader.style.opacity = 0;
+        setTimeout(() => {
+            preloader.style.display = "none";
+        }, 500);
+    });
+}
+
+window.onload = preload;
+
     </script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-NYYMDZW27F"></script>
 <script>
