@@ -4,20 +4,24 @@ const urlsToCache = [
   '/index.html',
   '/style.css',
   '/images/logo.png',
-  '/images/raihan-ahmed(1)small.webp',
+  '/offline.html'
 ];
 self.addEventListener('install', (event) => {
   event.waitUntil(
-    caches.open(CACHE_NAME).then((cache) => {
-      return cache.addAll(urlsToCache);
-    })
+    caches.open(CACHE_NAME)
+      .then((cache) => {
+        return cache.addAll(urlsToCache);
+      })
   );
 });
 self.addEventListener('fetch', (event) => {
   event.respondWith(
-    caches.match(event.request).then((cachedResponse) => {
-      return cachedResponse || fetch(event.request).then((response) => {
-        // Cache the new resource for future use
-        return caches.open(CACHE_NAME).then((cache) => {
-          cache.put(event.request, response.clone());
+    caches.match(event.request)
+      .then((response) => {
+        if (response) {
           return response;
+        }
+        return fetch(event.request).catch(() => caches.match('/offline.html')); // Offline fallback
+      })
+  );
+});
