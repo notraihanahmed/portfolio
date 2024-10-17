@@ -655,12 +655,13 @@ section:nth-child(odd) {
             box-sizing: border-box;
     border-radius: .5rem;
     border: none;
-    background: var(--active);
+    background: -o-linear-gradient(45deg, var(--active), var(--dark));
+    background: linear-gradient(45deg, var(--active), var(--dark));
     -webkit-box-shadow: 0 0 5px var(--active);
             box-shadow: 0 0 5px var(--active);
     font-size: 1.1rem;
     font-weight: bold;
-    color: var(--black);
+    color: var(--white);
     -webkit-transition: .5s ease;
     -o-transition: .5s ease;
     transition: .5s ease;
