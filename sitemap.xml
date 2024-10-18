@@ -7,9 +7,13 @@
       
 <url>
   <loc>https://notraihanahmed.vercel.app/</loc>
-  <lastmod>2024-10-06T15:23:22+00:00</lastmod>
+  <lastmod>2024-10-18T15:23:22+00:00</lastmod>
   <priority>1.00</priority>
 </url>
-
+<url>
+  <loc>https://notraihanahmed.vercel.app/index.html</loc>
+  <lastmod>2024-10-18T15:23:22+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
 
 </urlset>
