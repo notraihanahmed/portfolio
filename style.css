@@ -195,7 +195,7 @@ nav ul li a.active {
 }
 .home, .about, .projects, .faq {
     height: 100vh;
-    max-height: 800px;
+    max-height: 1080px;
     padding: 5rem;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
